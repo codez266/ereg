@@ -101,6 +101,7 @@ if( $_SERVER['REQUEST_METHOD'] == "POST") {
 				$mailTo = $_POST['email'];
 				$txt = "You have been successfully registered for eweek.\nYour username is ".$name;
 				$txt .= "\nYour password is ".$pass;
+				$txt = "Go to "." "."login.php"
 				$sub = "IIT Patna E-Week registrations";
 				mail($mailTo,$sub,$txt);
 				header('Location:profile.php');
@@ -121,14 +122,14 @@ if( $_SERVER['REQUEST_METHOD'] == "POST") {
 </head>
 <body>
 <header>
-  <div class = "err">
-    <?php
-      if( isset( $_SESSION['err'] ) ) {
-        echo $_SESSION['err'];
-        unset( $_SESSION['err'] );
-      }
-    ?>
-  </div>
+	<div class = "err">
+	<?php
+		if( isset( $_SESSION['err'] ) ) {
+			echo $_SESSION['err'];
+			unset( $_SESSION['err'] );
+		}
+	?>
+	</div>
 </header>
 	<h1>Entrepreneurship cell IIT Patna E-Week registration</h1>
 	<div class="box">

@@ -5,6 +5,7 @@ $user = "ecell";
 $host = "localhost";
 $pass = "ecell";
 $table = "ecell";
+//$dbc=mysqli_connect($host,$user,$pass,$table)or die('Error connecting with database.');
 /*global $db_connection;
 $db_connection = new mysqli($host, $user, $pass, $table);
 // Check connection

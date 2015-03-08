@@ -83,6 +83,7 @@ $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);*/
 						</a><?php $i++;
 					}
 				?>
+				<li><a href="quiz.php">B-Quiz</a></li>
 				</ul>
 			</div>
 			<div class="main">
